@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ommnia-sso-client"
-version = "0.1.0"
+version = "1.0.2"
 description = "The client for the Ommnia SSO system"
 authors = ["Luke A.C.A. Rieff - Ommnia Systems"]
 readme = "README.md"
@@ -12,8 +12,8 @@ aiohttp = "^3.10.1"
 pydantic = "^2.8.2"
 cryptography = "^43.0.0"
 PyJWT = "^2.9.0"
-ommnia-permission-tree = {git = "https://github.com/ommnia-lrieff/ommnia_permission_tree.git"}
-ommnia-sso-tokens = {git = "https://github.com/ommnia-lrieff/ommnia_sso_tokens.git"}
+ommnia-permission-tree = {git = "https://github.com/ommnia-lrieff/ommnia_permission_tree.git", tag="v1.0.2"}
+ommnia-sso-tokens = {git = "https://github.com/ommnia-lrieff/ommnia_sso_tokens.git", tag="v1.0.3"}
 
 
 [build-system]

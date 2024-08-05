@@ -543,7 +543,7 @@ files = [
 
 [[package]]
 name = "ommnia-permission-tree"
-version = "0.1.0"
+version = "1.0.2"
 description = "A simple data structure to manage permissions."
 optional = false
 python-versions = "^3.12"
@@ -556,12 +556,12 @@ more-itertools = "^10.3.0"
 [package.source]
 type = "git"
 url = "https://github.com/ommnia-lrieff/ommnia_permission_tree.git"
-reference = "HEAD"
-resolved_reference = "714261045e0d8699522fce714e4bb2cc58f2693a"
+reference = "v1.0.2"
+resolved_reference = "f58aac070ecee295209869e4b282529d1092d4a0"
 
 [[package]]
 name = "ommnia-sso-tokens"
-version = "0.1.0"
+version = "1.0.3"
 description = "The tokens used by the Ommnia SSO system."
 optional = false
 python-versions = "^3.12"
@@ -569,15 +569,15 @@ files = []
 develop = false
 
 [package.dependencies]
-ommnia-permission-tree = {git = "https://github.com/ommnia-lrieff/ommnia_permission_tree.git"}
+ommnia-permission-tree = {git = "https://github.com/ommnia-lrieff/ommnia_permission_tree.git", tag = "v1.0.2"}
 pydantic = "^2.8.2"
 pyjwt = "^2.9.0"
 
 [package.source]
 type = "git"
 url = "https://github.com/ommnia-lrieff/ommnia_sso_tokens.git"
-reference = "HEAD"
-resolved_reference = "86d55fa82db98516a717bd284143eb8db99a2c19"
+reference = "v1.0.3"
+resolved_reference = "342bc606ec0cd4ab697493c7db335b24e741b852"
 
 [[package]]
 name = "pycparser"
@@ -858,4 +858,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "f56ce9b700e51090d2b50579b850fbf088f1332dd9b96c4578dfb28d0ca7e26b"
+content-hash = "a8fc3dfcad5358e7fda5505d4864012b423045927cfcd6b26ff6781fd4b53f06"
