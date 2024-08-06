@@ -7,7 +7,8 @@ from pydantic import BaseModel, ConfigDict, Field
 class LoginSessionDetailsFailureCode(Enum):
     INVALID_TOKEN = "INVALID_TOKEN"
     SESSION_NOT_FOUND = "SESSION_NOT_FOUND"
-    SESSION_COMLETED = "SESSION_COMLETED"
+    SESSION_COMPLETED = "SESSION_COMPLETED"
+    SESSION_EXPIRED = "SESSION_EXPIRED"
 
 
 class LoginSessionDetailsSuccessResponse(BaseModel):
