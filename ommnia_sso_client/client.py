@@ -252,7 +252,7 @@ class Client:
     ) -> None:
         response: RestoreResponse = self._RestoreMutationResponse.model_validate(
             await self.client.execute_async(
-                self._CREATE_RESTORE_SESSION_MUTATION,
+                self._RESTORE_MUTATION,
                 {
                     "code": code,
                     "password": password,
