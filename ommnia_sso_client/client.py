@@ -40,7 +40,9 @@ class ClientSettings:
     app_name: str  # The name of the app for which the client is active.
     graphql_server_url: str  # The URL of the SSO GraphQL server.
     client_private_key: (
-        str  # The private RSA signing key used to sign the JWT that is sent to the server.
+        Optional[
+            str
+        ]  # The private RSA signing key used to sign the JWT that is sent to the server.
     )
     server_public_key: str  # The public RSA verification key used to verify the JWT that originates from the server.
 
@@ -330,6 +332,8 @@ class Client:
         required_permissions: List[str] = [],
         optional_permissions: List[str] = [],
     ) -> str:
+        assert self.settings.client_private_key is not None
+
         token_value: LoginSessionCreationToken = LoginSessionCreationToken(
             app_name=self.settings.app_name,
             target_app_name=target_app_name,
